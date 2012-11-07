@@ -1,0 +1,15 @@
+<div id="user_list">
+  <h2>Dear Gretchen:</h2>
+<div id="users">
+<% @list.each do |l| %>
+  <% if l.name != "" %>
+  <div id="<%= l.id %>" class="user">
+	<div class="name"><span><%= l.name %></span> on <%= l.created_at.to_formatted_s(:easy) %></div>
+	<% if l.wish != "" %>
+	<div class="wish"><%= l.wish %></div>
+  	<% end %>
+  </div>
+  <% end %>
+<% end %>
+</div>
+</div>
