@@ -64,8 +64,11 @@ input[type=submit] {
 	cursor: pointer;
 }
 input[type=submit]:hover { background: #999; }
+.lt-ie9 input[type=submit] {
+	padding: 5px 8px;
+}
 input#user_name { width: 220px; }
-input#user_wish { width: 420px; }
+input#user_wish { width: 400px; }
 
 label {
 	font-size: 1.25em;
