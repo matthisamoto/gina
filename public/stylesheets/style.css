@@ -10,6 +10,7 @@ body, html {
   width: 960px;
   margin: 0 auto;
 	padding: 115px 0 30px 0;
+	position: relative;
 }
 
 /* Header */
@@ -100,7 +101,8 @@ h2 {
 	font-weight: 400;
 }
 ol { padding: 25px 25px 0 25px; }
-ol li { line-height: 1.6em; }
+ol li { line-height: 1.6em; font-weight: 700; }
+ol li span { font-weight: 400; }
 .user {
 	display: block;
 	width: 100%;
@@ -108,7 +110,25 @@ ol li { line-height: 1.6em; }
 	border-top: 2px solid #e0e0e0;
 	line-height: 1.8em;
 }
-.name, .wish { font-size: 1.25em; font-weight: 700; }
+.name, .wish { 
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+/* Sharing */
+
+#sharing {
+	position: absolute;
+	right: 0;
+	top: 85px;
+	width: 100%;
+	z-index: 999;
+}
+.share {
+	float: right;
+	margin-left: 10px;r
+}
+
 
 /* Other Classes */
 
