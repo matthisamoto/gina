@@ -1,10 +1,12 @@
-<div id="user_input">
-	<h2>Wishes For The Special Birthday Girl!</h2>
-<nav class="clearfix">
-<%= form_for(:user, :url => {:action => 'create'}) do |f| %>
-  <%= f.text_field(:name, :class => "user_name", :value => "Name", :maxlength => 40) %>
-  <%= f.text_field(:wish, :class => "user_wish", :value => "Wish", :maxlength => 140) %>
-  <%= submit_tag("submit")%>
-<% end %>
-</nav>
-</div>
+
+  <section id="wish-form">
+    <h1>Wishes For The Special<br/>Birthday Girl!</h1>
+    <nav class="clearfix">
+    <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
+      <%= f.text_field(:name, :class => "name", :value => "Name", :maxlength => 40, :size => 33) %>
+      <%= f.text_field(:wish, :class => "wish", :value => "Wish", :maxlength => 140, :size => 33) %>
+      <%= submit_tag("submit")%>
+    <% end %>
+    
+    </nav>
+  </section>

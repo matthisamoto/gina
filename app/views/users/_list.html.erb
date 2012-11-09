@@ -1,15 +1,26 @@
-<div id="user_list">
-  <h1>Wishes for the special birthday girl!:</h1>
-<div id="users">
-<% @list.each do |l| %>
-  <% if l.name != "" %>
-  <div id="<%= l.id %>" class="user">
-	<div class="name"><span><%= l.name %></span> on <%= l.created_at.to_formatted_s(:easy) %></div>
-	<% if l.wish != "" %>
-	<div class="wish"><%= l.wish %></div>
-  	<% end %>
+<section id="wishes" class="outer-shadow">
+  
+  <div id="entourage">
+    <h2><strong>en&bull;tou&bull;rage</strong> [ahn-<em>too</em>-<strong>rahzh</strong>]</h2>
+    <ol>
+      <li>A group of attendants or associates, as of a person of rank or importance.</li>
+      <li>A supportive group of friends and family, especially of a person who has a <strong>Special Birthday</strong>, and is otherwise known as; "<strong>The one and only Gina Kilpatrick.</strong>"</li>
+      <li>A rowdy group of fun-loving people ready to celebrate Gina’s Special Birthday.</li>
+    </ol>
   </div>
+  
+  <div id="users">
+  <% @list.each do |l| %>
+    <div id="<%= l.id %>" class="user">
+    	<% if l.wish != "" %>
+      <div class="wish"><%= l.wish %></div>
+      <% end %>
+      <% if l.name != "" %>
+  	  <div class="name">&mdash;<%= l.name %></div>
+  	  <div class="date">[on <%= l.created_at.to_formatted_s(:easy) %>]</div>
+    	
+      <% end %>
+    </div>
   <% end %>
-<% end %>
-</div>
-</div>
+  </div>
+</section>
