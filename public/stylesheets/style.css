@@ -64,10 +64,25 @@ input[type=submit] {
 	cursor: pointer;
 }
 input[type=submit]:hover { background: #999; }
-input.name { width: 220px; }
-input.wish { width: 420px; }
+input#user_name { width: 220px; }
+input#user_wish { width: 420px; }
 
+label {
+	font-size: 1.25em;
+	font-family: Georgia, Times, serif;
+	font-weight: 400;
+	color: #339999;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 100%;
+}
 
+div.inline {
+	display: block;
+	float: left;
+	position: relative;
+}
 
 /* Photo Section */
 
