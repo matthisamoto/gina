@@ -1,8 +1,10 @@
 
 <div id="container">
-  
+  <% if Time.local(2012, 11, 10, 16, 0, 0).past? %>
   <%= render :partial => "users/sharing" %>
-  
+  <% else %>
+  <div id="warning">Please do not share on social media<br/>until after Saturday! Thank you!</div>
+  <% end %>
   <header class="outer-shadow">
     
     <div id="logo"></div>

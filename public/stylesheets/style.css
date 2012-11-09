@@ -126,7 +126,15 @@ ol li span { font-weight: 400; }
 }
 .share {
 	float: right;
-	margin-left: 10px;r
+	margin-left: 10px;
+}
+#warning {
+	font-size: 0.875em;
+	position: absolute;
+	width: 100%;
+	text-align: right;
+	top: 65px;
+	color: #993333;
 }
 
 

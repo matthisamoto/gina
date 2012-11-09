@@ -3,8 +3,8 @@
     <h1>Wishes For The Special<br/>Birthday Girl!</h1>
     <nav class="clearfix">
     <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
-      <%= f.text_field(:name, :class => "name", :value => "Name", :maxlength => 40, :size => 33) %>
-      <%= f.text_field(:wish, :class => "wish", :value => "Wish", :maxlength => 140, :size => 33) %>
+      <%= f.text_field(:name, :class => "name", :maxlength => 40, :size => 33, :placeholder => "Name") %>
+      <%= f.text_field(:wish, :class => "wish", :maxlength => 140, :size => 33, :placeholder => "Your birthday wish for Gina...") %>
       <%= submit_tag("submit")%>
     <% end %>
     
